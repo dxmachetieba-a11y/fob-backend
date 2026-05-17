@@ -1,7 +1,9 @@
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
-import { PrismaClient } from "@prisma/client";
+import pkg from "@prisma/client";
+const { PrismaClient } = pkg;
+
 
 const app = express();
 const prisma = new PrismaClient();
